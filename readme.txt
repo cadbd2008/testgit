@@ -36,5 +36,5 @@ $ git clone git@github.com:cadbd2008/testcopygit.git
 	通过git://使用ssh（也可以使用https等其他协议）从远程克隆库
 $ git checkout -b dev	创建dev分支，切换到dev分支
 $ git branch	查看当前所有分支
-$ git branch XXX c\创建XXX分支
+$ git branch XXX 创建XXX分支
 

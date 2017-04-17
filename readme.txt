@@ -37,4 +37,6 @@ $ git clone git@github.com:cadbd2008/testcopygit.git
 $ git checkout -b dev	创建dev分支，切换到dev分支
 $ git branch	查看当前所有分支
 $ git branch XXX 创建XXX分支
+$ git merge dev 把dev分支内容合并到master分支中
+$ git branch -d dev	删除dev分支
 

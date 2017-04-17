@@ -39,5 +39,3 @@ $ git branch	查看当前所有分支
 $ git branch XXX 创建XXX分支
 $ git merge dev 把dev分支内容合并到master分支中
 $ git branch -d dev	删除dev分支
-$
-

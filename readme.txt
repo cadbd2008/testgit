@@ -60,3 +60,4 @@ $ git pull --set-upstream dev origin/dev
 $ git tag v1.0	给当前分支打上版本标签（默认标签是打在最新提交的commit上）
 $ git tag v0.9 commit id	给特定版本的commit打上标签
 $ git tag	查看标签
+$ git show v1.0	查看标签v1.0的信息

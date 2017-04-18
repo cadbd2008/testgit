@@ -61,3 +61,27 @@ $ git tag v1.0	给当前分支打上版本标签（默认标签是打在最新�
 $ git tag v0.9 commit id	给特定版本的commit打上标签
 $ git tag	查看标签
 $ git show v1.0	查看标签v1.0的信息
+$ git tag -a v1.4 -m 'my version 1.4' 添加自定义注释的标签
+$ git tag -s v1.5 -m 'my signed  1.5' GPG 来签署的标签(如果有私钥)
+$ git tag -v v1.4.2.1	此命令会调用 GPG 来验证签名需要有签署者的公钥，存放在 keyring 中
+$ git push origin v1.5	分享标签到远端仓库
+$ git push origin --tags	一次性推送全部尚未推送到远程的本地标签
+$ git tag -d v0.1	删除v0.1标签
+$ git tag -d v0.9;$ git push origin :refs/tags/v0.9
+	标签已经推送到远程,先从本地删除标签,然后，从远程删除
+https://github.com/github/gitignore
+	.gitignore文件,配置需要忽略的文件（此网站有现成的，需要组合下就能使用）
+$ git check-ignore -v App.class
+	检查忽略文件匹配的规则（用于快速查找匹配错误的规则）
+配置别名：
+$ git config --global alias.st status	git st =git status
+$ git config --global alias.co checkout	git co =git checkout
+$ git config --global alias.ci commit	git ci =git commit
+$ git config --global alias.br branch	git br =git branch
+$ git config --global alias.unstage 'reset HEAD	git unstage XXX =git reset HEAD XXX
+$ git config --global alias.last 'log -1'  git last=git log -1 显示最后一次提交信息
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"	日志输出的颜色配置
+	--global参数是全局参数，也就是这些命令在这台电脑的所有Git仓库下都有用。
+	如果不加，那只针对当前的仓库起作用。
+	每个仓库的Git配置文件都放在.git/config文件中
+	当前用户的Git配置文件放在用户主目录下的一个隐藏文件.gitconfig中

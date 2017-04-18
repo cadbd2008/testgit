@@ -51,3 +51,6 @@ $ git stash list 查看被隐藏的工作现场
 $ git stash pop 恢复的同时把stash内容也删了
 $ git stash apply stash@{0} 恢复{0}的工作现场
 $ git stash drop 删除stash内容(删除第一个)
+$ git branch -D XXX	强行删除XXX分支（分支内容未合并时强行删除）
+$ git remote	查看远程库的信息
+$ git remote -v	查看远程库详细的信息

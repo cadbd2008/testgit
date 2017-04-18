@@ -46,7 +46,6 @@ $ git log --graph --pretty=oneline --abbrev-commit
 $ git log --graph	可以看到分支合并图
 $ git merge --no-ff -m "merge with no-ff" dev
 	合并dev分支，请注意--no-ff参数，表示禁用Fast forward：用于管理分支历史
-/************************************************************************/
 $ git stash 把当前工作现场隐藏起来
 $ git stash list 查看被隐藏的工作现场
 $ git stash pop 恢复的同时把stash内容也删了

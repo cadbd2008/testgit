@@ -54,3 +54,9 @@ $ git stash drop 删除stash内容(删除第一个)
 $ git branch -D XXX	强行删除XXX分支（分支内容未合并时强行删除）
 $ git remote	查看远程库的信息
 $ git remote -v	查看远程库详细的信息
+$ git pull	最新的提交从origin/dev抓下来
+$ git pull --set-upstream dev origin/dev
+	指定本地dev分支与远程origin/dev分支的链接
+$ git tag v1.0	给当前分支打上版本标签（默认标签是打在最新提交的commit上）
+$ git tag v0.9 commit id	给特定版本的commit打上标签
+$ git tag	查看标签
